@@ -6,8 +6,8 @@ var mob_types = ["walk","swim","Fly"]
 
 func _ready():
 	$AnimatedSprite.animation = mob_types[randi() % mob_types.size()]
-	
 
-func _on_Visibility_screen_exited():
+
+
+func _on_visibility_screen_exited():
 	queue_free()
-	

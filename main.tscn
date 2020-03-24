@@ -16,6 +16,14 @@ _data = {
 script = ExtResource( 4 )
 Mob = ExtResource( 3 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 480.0
+margin_bottom = 720.0
+color = Color( 0.298039, 0.427451, 0.54902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
 
 [node name="MobTimer" type="Timer" parent="."]
@@ -35,7 +43,7 @@ curve = SubResource( 1 )
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath"]
 position = Vector2( 479.762, -0.332066 )
-rotation = 1.56626
+rotation = 1.56627
 script = SubResource( 2 )
 
 [node name="HUD" parent="." instance=ExtResource( 2 )]
